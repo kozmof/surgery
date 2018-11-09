@@ -13,7 +13,8 @@ def test1(x, y, z):
         return 100
 
     def test4():
-        return z
+        a = 1000
+        return a + z
 
     def test5(a, b, c, d):
         return a + b + c + d
@@ -26,7 +27,7 @@ class Test(unittest.TestCase):
         inner_f = test1(50, 100, 200)
         self.assertEqual(inner_f['test2'](100), 160)
         self.assertEqual(inner_f['test3'](), 100)
-        self.assertEqual(inner_f['test4'](), 200)
+        self.assertEqual(inner_f['test4'](), 1200)
         self.assertEqual(inner_f['test5'](1, 2, 3, 4), 10)
         
 
