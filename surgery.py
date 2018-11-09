@@ -20,8 +20,8 @@ def surgery(f):
         PyCellNew = ctypes.pythonapi.PyCell_New
         ctypes.pythonapi.PyCell_New.argtypes = [ctypes.py_object]
         ctypes.pythonapi.PyCell_New.restype = ctypes.py_object
-        cels = tuple(PyCellNew(arg) for pos, arg in enumerate(args) if pos in arg_pos)
-        return cels
+        cells = tuple(PyCellNew(arg) for pos, arg in enumerate(args) if pos in arg_pos)
+        return cells
 
     def make_inner_f_cores(f, *args):
         f_list = []
