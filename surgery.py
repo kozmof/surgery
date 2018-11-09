@@ -17,8 +17,8 @@ def surgery(f):
                 arg_pos.append(arg_dict[freevar])
 
         PyCellNew = ctypes.pythonapi.PyCell_New
-        ctypes.pythonapi.PyCell_New.argtypes = [ctypes.py_object]
-        ctypes.pythonapi.PyCell_New.restype = ctypes.py_object
+        PyCellNew.argtypes = [ctypes.py_object]
+        PyCellNew.restype = ctypes.py_object
         cells = tuple(PyCellNew(arg) for pos, arg in enumerate(args) if pos in arg_pos)
         return cells
 
