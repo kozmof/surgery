@@ -18,6 +18,8 @@ def test1(x, y, z):
     def test5(a, b, c, d):
         return a + b + c + d
 
+    return 100
+
 
 class Test(unittest.TestCase):
     def test_return(self):
