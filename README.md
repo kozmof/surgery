@@ -3,7 +3,7 @@ surgery
 
 ![alt image](https://img.shields.io/badge/version-0.1.0-blue.svg) ![alt image](https://img.shields.io/badge/Python-3.5-blue.svg)
 
-A decorator for unittest to get functions which are defined in a function.
+A decorator for testing functions which are defined in a function.
 
 ### Usage
 
