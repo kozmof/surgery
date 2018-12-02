@@ -1,10 +1,11 @@
 surgery
 -------
+
 ![alt image](https://img.shields.io/badge/version-0.1.0-blue.svg) ![alt image](https://img.shields.io/badge/Python-3.5-blue.svg)
 
 A decorator for unittest to get functions which are defined in a function.
 
-## Usage
+### Usage
 
 ```Python
 @surgery
@@ -33,5 +34,5 @@ if __name__ == "__main__":
     print(inner_f['test6']())
 ```
 
-## Limitation
+### Limitation
 In an inner function, using a value defined in outer function is not available.
