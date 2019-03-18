@@ -1,7 +1,7 @@
 surgery
 -------
 
-![alt image](https://img.shields.io/badge/version-0.2.0-blue.svg) ![alt image](https://img.shields.io/badge/Python-3.5-blue.svg)
+![alt image](https://img.shields.io/badge/version-0.2.0-blue.svg) ![alt image](https://img.shields.io/badge/Python-3-blue.svg)
 
 A decorator for testing functions which are defined in a function. When you need to snap off surgery, pass False.
 
@@ -36,3 +36,6 @@ if __name__ == "__main__":
 
 ### Limitation
 In an inner function, using a value defined in an outer function is not available.
+
+### Licence
+MIT
